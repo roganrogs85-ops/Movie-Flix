@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #383f1f);
+    color: #fff;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url("vidhana.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 260px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* About Section Fix (No Conflict) */
+
+.about-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.about-desc {
+    margin: 15px 0 25px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* NEW GRID CLASS */
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Feature Box */
+.feature-box {
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.feature-box i {
+    font-size: 28px;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.feature-box h4 {
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Hover */
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}

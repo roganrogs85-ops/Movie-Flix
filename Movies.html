@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOVIES</title>
+  <link rel="stylesheet" href="catalog.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap; /* allows next row */
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .poster {
+      width: 300px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .poster img:hover {
+      transform: scale(1.05);
+    }
+
+    .title {
+      margin-top: 8px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎬MOVIES</h1>
+
+  <div class="gallery">
+
+    <!-- Poster 1 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt11378946" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/michael_dgawgtsd_d1135a1c-86de-461c-9507-142611cd78bf_500x749.jpg?v=1774901112" alt="Michael">
+      </a>
+      <div class="title">MICHAEL</div>
+    </div>
+
+    
+    <!-- Poster 2 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1160419" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/dune_fzj9yoaw_500x749.jpg?v=1762968807" alt="Dune">
+      </a>
+      <div class="title">DUNE</div>
+    </div>
+    
+    <!-- Poster 3 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1745960" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/67605cb6741d3c48cd5f69aaf38a990f_500x749.jpg?v=1762965544" alt="Top Gun Maverick">
+      </a>
+      <div class="title">TOP GUN MAVERICK</div>
+    </div>
+    
+    <!-- Poster 4 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0499549" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_pahieuwv_500x749.jpg?v=1762971220" alt="Avatar">
+      </a>
+      <div class="title">AVATAR</div>
+    </div>
+    
+    <!-- Poster 5 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt27047903" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/scream_seven_cd9467f2-d6db-4a6e-b357-e8eb0c8391ec_500x749.jpg?v=1762881819" alt="Scream 7">
+      </a>
+      <div class="title">SCREAM 7</div>
+    </div>
+    
+    <!-- Poster 6  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0293429" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/mortal-kombat-ii_b3ocwgkr_500x749.jpg?v=1774898759" alt="Mortal Kombat">
+      </a>
+      <div class="title">MORTAL KOMBAT</div>
+    </div>
+    
+    <!-- Poster 7  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt15654328" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/t1oAdt8JjUs4sHEBvE8fKtjV7er.jpg" alt="Leo">
+      </a>
+      <div class="title">LEO</div>
+    </div>
+    
+    <!-- Poster 8  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/tv/tt4016454" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/supergirl_acawrtmx_500x749.jpg?v=1776954766" alt="Super girl">
+      </a>
+      <div class="title">SUPER GIRL</div>
+    </div>
+    
+    <!-- Poster 9  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt4849438" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/xQ22LOWSkClP3maYhR9nZH0dnWM.jpg" alt="Bahubali 2">
+      </a>
+      <div class="title">BAHUBALI 2</div>
+    </div>
+    
+    <!-- Poster 10 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/tv/tt3322312" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/daredevil-born-again_z0nwrvhi_500x749.jpg?v=1771942117" alt="Daredevil: Born Again">
+      </a>
+      <div class="title">DAREDEVIL: BORN AGAIN</div>
+    </div>
+    
+    <!-- Poster 11  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt15047880" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/disclosure_day_ver3_76a9af22-bbcc-466a-a28e-af405c3272b0_500x749.jpg?v=1774458105" alt="Disclosure day">
+      </a>
+      <div class="title">DISCLOSURE DAY</div>
+    </div>
+    
+    <!-- Poster 12  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0468569" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/dark_knight_ver5_500x749.jpg?v=1762463947" alt="Dark Knight">
+      </a>
+      <div class="title">DARK KNIGHT</div>
+    </div>
+    
+    <!-- Poster 13  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12584954" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/twisters_ver2_500x749.jpg?v=1762976527" alt="Twisters">
+      </a>
+      <div class="title">TWISTERS</div>
+    </div>
+    
+    <!-- Poster 14 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt20969586" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/thunderbolts_drqhhatk_500x749.jpg?v=1762977726" alt="Thunderbolts">
+      </a>
+      <div class="title">THUNDERBOLTS</div>
+    </div>
+    
+    <!-- Poster 15  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt16311594" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/1000263477_500x749.jpg?v=1762980096" alt="F1">
+      </a>
+      <div class="title">F1</div>
+    </div>
+    
+    <!-- Poster 16  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0266697" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/kill-bill-the-whole-bloody-affair_llmpgke1_500x749.jpg?v=1765127031" alt="kill bill">
+      </a>
+      <div class="title">KILL BILL</div>
+    </div>
+    
+    <!-- Poster 17  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/tv/tt3322312" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/daredevil-born-again_sbtwmn2h_500x749.jpg?v=1762979603" alt="Daredevil: Born Again">
+      </a>
+      <div class="title">DAREDEVIL: BORN AGAIN</div>
+    </div>
+    
+    <!-- Poster 18 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt26581740" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/weapons_scflpbfp_500x749.jpg?v=1759166230" alt="Weapons">
+      </a>
+      <div class="title">WEAPONS</div>
+    </div>
+    
+    <!-- Poster 19  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt9389998" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/ncGDurGoD9j40JethMQOzE1EmuX.jpg" alt="Pushpa the rise">
+      </a>
+      <div class="title">PUSHPA THE RISE</div>
+    </div>
+    
+    <!-- Poster 20  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt5950044" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/superman_onrsxgbh_500x749.jpg?v=1762979010" alt="Superman">
+      </a>
+      <div class="title">SUPERMAN</div>
+    </div>
+  
+    
+    <!-- Poster 21  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0107290" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/jurassicpark.mpw_500x749.jpg?v=1762464743" alt="Jurassicpark">
+      </a>
+      <div class="title">Jurassicpark</div>
+    </div>
+  
+    
+    <!-- Poster 22  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0073195" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/Jaws_428e4c0f-68bf-432a-805d-f5c01c404aaa_500x749.jpg?v=1762507204" alt="Jaws">
+      </a>
+      <div class="title">JAWS</div>
+    </div>
+  
+    
+    <!-- Poster 23  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0816692" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/interstellar-139399_500x749.jpg?v=1762974876" alt="Interstellar">
+      </a>
+      <div class="title">INTERSTELLAR</div>
+    </div>
+  
+    
+    <!-- Poster 24  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0099685" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/Goodfellas.mpw.116119_500x749.jpg?v=1762964954" alt="Goodfellas">
+      </a>
+      <div class="title">GOODFELLAS</div>
+    </div>
+  
+    
+    <!-- Poster 25  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0111161" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/shawshank_eb84716b-efa9-44dc-a19d-c17924a3f7df_500x749.jpg?v=1762974225" alt="Shawshank the redemption">
+      </a>
+      <div class="title">SHAWSHANK THE REDEMPTION</div>
+    </div>
+  
+    
+    <!-- Poster 26  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt3783958" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/LaLaLand.24x36_500x749.jpg?v=1762975415" alt="LaLaLand">
+      </a>
+      <div class="title">LA LA LAND</div>
+    </div>
+  
+    
+    <!-- Poster 27 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0083866" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/E.T.BIKE.mpw.125511_6b394810-0b97-48fc-8e49-637d496a19fc_500x749.jpg?v=1762965632" alt="E.T">
+      </a>
+      <div class="title">E.T</div>
+    </div>
+  
+    
+    <!-- Poster 28  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7975244" target="_blank">
+         <img src="https://www.movieposters.com/cdn/shop/products/jumaninextlevel.reg.ar.jpg?v=1759484803&width=250" alt="Jumanjinextlevel">
+      </a>
+      <div class="title">JUMANJI NEXT LEVEL</div>
+    </div>
+  
+    
+    <!-- Poster 29 -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt27540217" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/8DbYYluzdiGDAZzsaP7DWGbwfLd.jpg" alt="GoodBadUgly">
+      </a>
+      <div class="title">GOOD BAD UGLY</div>
+    </div>
+  
+    
+    <!-- Poster 30  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0848228" target="_blank">
+         <img src="https://www.movieposters.com/cdn/shop/products/THE-AVENGERS-LEGAL.jpg?v=1762971420&width=250" alt="Avengers">
+      </a>
+      <div class="title">AVENGERS</div>
+    </div>
+  
+    
+    <!-- Poster 31  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt11301946" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/yE8bsjy9hvuSY5JdtFlJGXyaTeH.jpg" alt="Beast">
+      </a>
+      <div class="title">BEAST</div>
+    </div>
+  
+    
+    <!-- Poster 32  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt10698680" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/khNVygolU0TxLIDWff5tQlAhZ23.jpg" alt="Kgf 2">
+      </a>
+      <div class="title">KGF 2</div>
+    </div>
+  
+    
+    <!-- Poster 33  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt4154756" target="_blank">
+         <img src="https://www.movieposters.com/cdn/shop/products/INFINITY-WAR-LEGAL.jpg?v=1762971421&width=250" alt="Avengersinfinitywar">
+      </a>
+      <div class="title">AVENGERS INFINITY WAR</div>
+    </div>
+  
+    
+    <!-- Poster 34  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt4154796" target="_blank">
+         <img src="https://www.movieposters.com/cdn/shop/products/ENDGAME-LEGAL.jpg?v=1762971422&width=250" alt="Avengersendgame">
+      </a>
+      <div class="title">AVENGERS END GAME</div>
+    </div>
+  
+    
+    <!-- Poster 35  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt32298285" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/sirat_upnbmjcx_500x749.jpg?v=1764013832" alt="Sirat">
+      </a>
+      <div class="title">SIRAT</div>
+    </div>
+  
+    
+    <!-- Poster 36  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/deep-water_vonihebn_b98f4fd4-e063-4b4c-91b8-23cefbb16420_500x749.jpg?v=1774899024" alt="Deepwater">
+      </a>
+      <div class="title">DEEP WATER</div>
+    </div>
+  
+    
+    <!-- Poster 37  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/111750-Godzilla-vs-Kong-Final-A_500x749.jpg?v=1762967686" alt="Godzilla vs Kong">
+      </a>
+      <div class="title">GODZILLA VS KONG</div>
+    </div>
+  
+    
+    <!-- Poster 38  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/83b0ea6b7fdd88bae5dfbe8ce8b51f6f_f6fc6144-1488-4eef-bc93-7496b8cc0275_500x749.jpg?v=1762506993" alt="300">
+      </a>
+      <div class="title">300</div>
+    </div>
+  
+    
+    <!-- Poster 39  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/wonder-man_vnpqqwel_e2bacbc6-6f11-4ff9-b6dd-19f15c449dac_500x749.jpg?v=1771943330" alt="wonderman">
+      </a>
+      <div class="title">WONDER MAN</div>
+    </div>
+  
+    
+    <!-- Poster 40  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt33014583" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg" alt="Dhurandhar">
+      </a>
+      <div class="title">DHURANDHAR</div>
+    </div>
+  
+    
+    <!-- Poster 41  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/star-wars-the-bad-batch_ewdw3uax_500x749.jpg?v=1762975783" alt="Badbatch">
+      </a>
+      <div class="title">BAD BATCH</div>
+    </div>
+    
+    <!-- Poster 42  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/d6dba114f505426302caef10491e981a_f157f2d2-5a88-409d-9b73-dc264ad10d0e_500x749.jpg?v=1762975189" alt="Fastandfurious">
+      </a>
+      <div class="title">FAST AND FURIOUS</div>
+    </div>
+  
+    
+    <!-- Poster 43  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt26439764" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/3CP7crYcSBV0k8JP6fl0XaMPpDY.jpg" alt="Kantara chapter 1">
+      </a>
+      <div class="title">KANTARA CHAPTER 1</div>
+    </div>
+  
+    
+    <!-- Poster 44  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/08b3ddb875c774528734aa69d0cf2d81_92b32194-7aa4-4780-b104-7295b52589e4_500x749.jpg?v=1762462762" alt="Jhon carter">
+      </a>
+      <div class="title">JHON CARTER</div>
+    </div>
+  
+    
+    <!-- Poster 45  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/files/alien_resurrection_ver2_500x749.jpg?v=1762960638" alt="Alien">
+      </a>
+      <div class="title">ALIEN</div>
+    </div>
+  
+    
+    <!-- Poster 46  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/11f5be69653296ea9348354467f4ff04_8fb64e3c-02f6-4f31-9341-359c78be303b_500x749.jpg?v=1762503397" alt="indianajones">
+      </a>
+      <div class="title">INDIANA JONES</div>
+    </div>
+  
+    
+    <!-- Poster 47  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/5972e827ee39372b4d68006475347270_e6a8b7fa-1ab0-4dd7-8745-6f9b1148c960_500x749.jpg?v=1762473971" alt="Mummy">
+      </a>
+      <div class="title">MUMMY</div>
+    </div>
+  
+    
+    <!-- Poster 48  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/scan005_94b2502d-2e23-452e-b5de-6601305895cd_500x749.jpg?v=1759487661" alt="Uncharted">
+      </a>
+      <div class="title">UNCHARTED</div>
+    </div>
+  
+    
+    <!-- Poster 49  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/free-guy_lgptnwmd_500x749.jpg?v=1762969165" alt="Freeguy">
+      </a>
+      <div class="title">FREE GUY</div>
+    </div>
+    
+    <!-- Poster 50  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg" alt="Godfather">
+      </a>
+      <div class="title">GOD FATHER</div>
+    </div>
+    
+    <!-- Poster 51  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/1kLYRzVj6byWvFa3SLrAOcfgnfp.jpg" alt="Titanic">
+      </a>
+      <div class="title">TITANIC</div>
+    </div>
+    
+    <!-- Poster 52  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer">
+      </a>
+      <div class="title">OPPENHEIMER</div>
+    </div>
+    
+    <!-- Poster 53  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/z63LEFqV9TrJAEZW42YGfekPOgC.jpg" alt="Missionimpossible">
+      </a>
+      <div class="title">MISSION IMPOSSIBLE</div>
+    </div>
+    
+    <!-- Poster 54  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/A7EByudX0eOzlkQ2FIbogzyazm2.jpg" alt="Thebeekeeper">
+      </a>
+      <div class="title">THE BEEKEEPER</div>
+    </div>
+    
+    <!-- Poster 55  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/9Uk6cHaqHTXQsx77Z984VFmIdqt.jpg" alt="Seven">
+      </a>
+      <div class="title">SEVEN</div>
+    </div>
+    
+    <!-- Poster 56  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt2631186" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/yOv2boj3ALoEEDtRteL7vhmRyG.jpg" alt="Bahubali">
+      </a>
+      <div class="title">BAHUBALI</div>
+    </div>
+    <!-- Poster 57  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt15327088" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/jIsKmkxMzdCZ0Ux1GVSnu8m6Na6.jpg" alt="Kantara">
+      </a>
+      <div class="title">KANTARA</div>
+    </div>
+    <!-- Poster 58  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt27118357" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/eCB06m1KUGilEOlIzb40nkQhVY0.jpg" alt="Amaran">
+      </a>
+      <div class="title">AMARAN</div>
+    </div>
+    <!-- Poster 59  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/iwmh53N9oPUiCQBZdBWdiB1kur2.jpg" alt="Ayyappanum koshiyum">
+      </a>
+      <div class="title">AYYAPPANUM KOSHIYUM</div>
+    </div>
+    <!-- Poster 60  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7838252" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg" alt="Kgf chapter 1">
+      </a>
+      <div class="title">KGF</div>
+    </div>
+    <!-- Poster 61  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt8291224" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/yNySAgpAnWmPpYinim9E0tUzJWG.jpg" alt="Uri">
+      </a>
+      <div class="title">URI</div>
+    </div>
+    <!-- Poster 62  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7019842" target="_blank">
+         <img src="https://wallpapercave.com/wp/wp4500405.jpg" alt="96">
+      </a>
+      <div class="title">96</div>
+    </div>
+    <!-- Poster 63  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7060344" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/mRObdeazn263na5zXzZSRJTBvi7.jpg" alt="Ratsasan">
+      </a>
+      <div class="title">RATSASAN</div>
+    </div>
+    <!-- Poster 64  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt23849204" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/cDWW5l4NTWtQi9McwevrY3knsTd.jpg" alt="12th fail">
+      </a>
+      <div class="title">12TH FAIL</div>
+    </div>
+    <!-- Poster 65  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt9263550" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/o7A1agEoXvwyyOmIbHnUhfnC34j.jpg" alt="Rocketry">
+      </a>
+      <div class="title">ROCKETRY</div>
+    </div>
+    <!-- Poster 66  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt9900782" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/gvPpU7LZ8sHJQu9h7D4PA4ZyySp.jpg" alt="kaithi">
+      </a>
+      <div class="title">KAITHI</div>
+    </div>
+    <!-- Poster 67  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt10189514" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/5uimlxPCgAei8JfQUDFEUQLoyyh.jpg" alt="Soorarai pottru">
+      </a>
+      <div class="title">SOORARAI POTTRU</div>
+    </div>
+    <!-- Poster 68  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt5074352" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/cJRPOLEexI7qp2DKtFfCh7YaaUG.jpg" alt="Dangal">
+      </a>
+      <div class="title">DANGAL</div>
+    </div>
+    <!-- Poster 69  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt9477520" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/Elnp3XrAlMM30dil8rbL7D9XeP.jpg" alt="asuran">
+      </a>
+      <div class="title">ASURAN</div>
+    </div>
+    <!-- Poster 70  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1649418" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/fNNHi2Myxzqb7Q9Y55hIXNcGkSP.jpg" alt="the gray man">
+      </a>
+      <div class="title">THE GRAY MAN</div>
+    </div>
+    <!-- Poster 71  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt6148156" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/ob9YxdzRu5lfKgz0PNrlL45dorf.jpg" alt="Vikram vedha">
+      </a>
+      <div class="title">VIKRAM VEDHA</div>
+    </div>
+    <!-- Poster 72  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt9179430" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg" alt="Vikram">
+      </a>
+      <div class="title">VIKRAM</div>
+    </div>
+    <!-- Poster 73  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt0137523" target="_blank">
+         <img src="https://image.tmdb.org/t/p/original/kR7o2KJh1ToucnTPDDG2MAL7VLZ.jpg" alt="Fight club">
+      </a>
+      <div class="title">FIGHT CLUB</div>
+    </div>
+    <!-- Poster 74  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12801262" target="_blank">
+         <img src="https://image.tmdb.org/t/p/original/4Pa7SriYtq4BdoS2BAPm6w66vLi.jpg" alt="Vada chennai">
+      </a>
+      <div class="title">VADA CHENNAI</div>
+    </div>
+    <!-- Poster 75  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt4169250" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/lUpMckVHaB55YJ3SMK0arwxKmCt.jpg" alt="Ms dhoni the untold story">
+      </a>
+      <div class="title">MS DHONI THE UNTOLD STORY</div>
+    </div>
+    <!-- Poster 76  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt27540542" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/a47JQFl9L7VDa79tEvnTOJe0rPa.jpg" alt="Lucky baskhar">
+      </a>
+      <div class="title">LUCKY BASKHAR</div>
+    </div>
+    <!-- Poster 77  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt8178634" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg" alt="rrr">
+      </a>
+      <div class="title">RRR</div>
+    </div>
+    <!-- Poster 78  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt11663228" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/8fakm66O8AFq9T5Pb6XSi8qJhnY.jpg" alt="Jailer">
+      </a>
+      <div class="title">JAILER</div>
+    </div>
+    <!-- Poster 79  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt15097216" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/zb9QBUn5AZzoKCS2jsnhp6ySSGp.jpg" alt="Jai bhim">
+      </a>
+      <div class="title">JAI BHIM</div>
+    </div>
+    <!-- Poster 80  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1375666" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/gqgwNjwjSqGkOqkE2rppogenu4v.jpg" alt="Inception">
+      </a>
+      <div class="title">INCEPTION</div>
+    </div>
+    <!-- Poster 81  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7466810" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/fhFdI5vJa6qz8z6DN3NAp7kIuXX.jpg" alt="777 Charlie">
+      </a>
+      <div class="title">777 CHARLIE</div>
+    </div>
+    <!-- Poster 82  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt6263850" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool and wolverine">
+      </a>
+      <div class="title">DEADPOOL AND WOLVERINE</div>
+    </div>
+    <!-- Poster 83  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt8936646" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg" alt="Extraction">
+      </a>
+      <div class="title">EXTRACTION</div>
+    </div>
+    <!-- Poster 84  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt12263384" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/d1qDrtlRP3adVFhGlGiLLMutmRd.jpg" alt="Extraction 2">
+      </a>
+      <div class="title">EXTRACTION 2</div>
+    </div>
+    <!-- Poster 85  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt2393827" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/aWZE5lVbByEJdirbAq6eLn9s2tf.jpg" alt="Howl">
+      </a>
+      <div class="title">HOWL</div>
+    </div>
+    <!-- Poster 86  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt29470244" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/y9QE7c2YOn2EOoa26VyK2nNtlA.jpg" alt="Vaazha">
+      </a>
+      <div class="title">VAAZHA</div>
+    </div>
+    <!-- Poster 87  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt22543326" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/gl3AeCuuFDsjhN4rKKFQ9O8mzrC.jpg" alt="Maaveeran">
+      </a>
+      <div class="title">MAAVEERAN</div>
+    </div>
+    <!-- Poster 88  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1950186" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/xCIvjOKS6FvkxFIczinuX6VDWpr.jpg" alt="Fordvsferrari">
+      </a>
+      <div class="title">FORD VS FERRARI</div>
+    </div>
+    <!-- Poster 89  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1187043" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/gDrkemvSFiJ1PprEX0ns1ybDW9.jpg" alt="3 idiots">
+      </a>
+      <div class="title">3 IDIOTS</div>
+    </div>
+    <!-- Poster 90  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7888964" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg" alt="Nobody">
+      </a>
+      <div class="title">NOBODY</div>
+    </div>
+    <!-- Poster 91  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt1899353" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/kfJX4IvxKoaovGtLb2Cn4sMkp9B.jpg" alt="The raid">
+      </a>
+      <div class="title">THE RAID</div>
+    </div>
+    <!-- Poster 92  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt2265171" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/fwEML9xRIOQdNZQYv34kfcU8gE9.jpg" alt="The raid 2">
+      </a>
+      <div class="title">THE RAID 2</div>
+    </div>
+    <!-- Poster 93  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt8948790" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/bU9q9yVtxeBiC0Do27CekHXNE6D.jpg" alt="Jersey">
+      </a>
+      <div class="title">JERSEY</div>
+    </div>
+    <!-- Poster 94  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt8413338" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/lJ3RvIirE2C7gdBKvPRaoQ3iCo2.jpg" alt="KumbalangiNights">
+      </a>
+      <div class="title">KUMBALANGI NIGHTS</div>
+    </div>
+    <!-- Poster 95  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt26758372" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/ngDEH7YqVaMCAD4LpNxRl6ScJnw.jpg" alt="Meiyazhagan">
+      </a>
+      <div class="title">MEIYAZHAGAN</div>
+    </div>
+    <!-- Poster 96  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt20850406" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/t1O94ZBzsQXJihtVkrsStRLyUDR.jpg" alt="Sitaramam">
+      </a>
+      <div class="title">SITA RAMAM</div>
+    </div>
+    <!-- Poster 97  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt25433734" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/hhMLtq9m1aK0dpY9Wcq26XeDH2z.jpg" alt="Hinanna">
+      </a>
+      <div class="title">HI NANNA</div>
+    </div>
+    <!-- Poster 98  -->
+    <div class="poster">
+      <a href="https://streamimdb.ru/embed/movie/tt7019942" target="_blank">
+         <img src="https://www.themoviedb.org/t/p/w1280/rTsYDdFWyw87CTk4YgJO6nYmVcJ.jpg" alt="Superdeluxe">
+      </a>
+      <div class="title">SUPER DELUXE</div>
+    </div>
+  
+
+    <!-- Add more posters below like this 👇 -->
+    <!--
+    <div class="poster">
+      <img src="yourimage.jpg" alt="Movie">
+      <div class="title">Movie Name</div>
+    </div>
+    -->
+
+  </div>
+
+  <script src="catalog.js"></script>
+</body>
+</html>

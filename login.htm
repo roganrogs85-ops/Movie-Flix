@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Login | MOVIEFLIX</title>
+</head>
+
+<body>
+    <main class="login_shell">
+        <section class="preview_panel" aria-label="MovieFlix welcome">
+            <a class="brand" href="index.html">
+                <img src="img/logo.png" alt="MovieFlix logo">
+                <span>MOVIEFLIX</span>
+            </a>
+
+            <div class="poster_stack">
+                <img src="img/the boys.jpg" alt="The Boys poster">
+                <img src="img/money heist.jpg" alt="Money Heist poster">
+                <img src="img/avengers.jpg" alt="Avengers poster">
+            </div>
+
+            <div class="preview_copy">
+                <p>Start streaming</p>
+                <h1>Create your account, then jump back into movie night.</h1>
+            </div>
+        </section>
+
+        <section class="form_panel">
+            <div class="form_header">
+                <p>Account access</p>
+                <h2 id="formTitle">Create account</h2>
+            </div>
+
+            <div class="auth_tabs" role="tablist" aria-label="Account forms">
+                <button class="tab_btn active" type="button" data-form="signup" role="tab" aria-selected="true">Sign up</button>
+                <button class="tab_btn" type="button" data-form="login" role="tab" aria-selected="false">Login</button>
+            </div>
+
+            <form id="signupForm" class="auth_form active" novalidate>
+                <label for="signupName">Full name</label>
+                <div class="field">
+                    <i class="bi bi-person-badge"></i>
+                    <input type="text" id="signupName" name="signupName" placeholder="Enter your name" autocomplete="name" required>
+                </div>
+
+                <label for="signupUsername">Username</label>
+                <div class="field">
+                    <i class="bi bi-person"></i>
+                    <input type="text" id="signupUsername" name="signupUsername" placeholder="Choose username" autocomplete="username" required>
+                </div>
+
+                <label for="signupPassword">Password</label>
+                <div class="field">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" id="signupPassword" name="signupPassword" placeholder="Create password" autocomplete="new-password" required>
+                    <button class="icon_btn password_toggle" type="button" data-target="signupPassword" aria-label="Show password">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+
+                <button class="login_btn" type="submit">
+                    <span>Sign up</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+                <p class="message" id="signupMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <form id="loginForm" class="auth_form" novalidate>
+                <label for="username">Username</label>
+                <div class="field">
+                    <i class="bi bi-person"></i>
+                    <input type="text" id="username" name="username" placeholder="Enter username" autocomplete="username" required>
+                </div>
+
+                <label for="password">Password</label>
+                <div class="field">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Enter password" autocomplete="current-password" required>
+                    <button class="icon_btn password_toggle" type="button" data-target="password" aria-label="Show password">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+
+                <div class="form_options">
+                    <label class="remember">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="index.html">Back home</a>
+                </div>
+
+                <button class="login_btn" type="submit">
+                    <span>Login</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+                <p class="message" id="message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const form = document.querySelector("#loginForm");
+        const signupForm = document.querySelector("#signupForm");
+        const formTitle = document.querySelector("#formTitle");
+        const tabButtons = document.querySelectorAll(".tab_btn");
+        const authForms = document.querySelectorAll(".auth_form");
+        const message = document.querySelector("#message");
+        const signupMessage = document.querySelector("#signupMessage");
+        const usernameInput = document.querySelector("#username");
+        const passwordInput = document.querySelector("#password");
+        const signupNameInput = document.querySelector("#signupName");
+        const signupUsernameInput = document.querySelector("#signupUsername");
+        const signupPasswordInput = document.querySelector("#signupPassword");
+        const rememberInput = document.querySelector("#remember");
+        const passwordToggles = document.querySelectorAll(".password_toggle");
+
+        const savedUser = localStorage.getItem("movieflixRememberedUser");
+        if (savedUser) {
+            usernameInput.value = savedUser;
+            rememberInput.checked = true;
+        }
+
+        function getStoredUsers() {
+            return JSON.parse(localStorage.getItem("movieflixUsers") || "[]");
+        }
+
+        function saveStoredUsers(users) {
+            localStorage.setItem("movieflixUsers", JSON.stringify(users));
+        }
+
+        function switchForm(formName) {
+            const isSignup = formName === "signup";
+            formTitle.textContent = isSignup ? "Create account" : "Welcome back";
+            signupMessage.textContent = "";
+            message.textContent = "";
+
+            tabButtons.forEach((button) => {
+                const active = button.dataset.form === formName;
+                button.classList.toggle("active", active);
+                button.setAttribute("aria-selected", active);
+            });
+
+            authForms.forEach((authForm) => {
+                authForm.classList.toggle("active", authForm.id === `${formName}Form`);
+            });
+        }
+
+        tabButtons.forEach((button) => {
+            button.addEventListener("click", () => switchForm(button.dataset.form));
+        });
+
+        passwordToggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                const input = document.querySelector(`#${toggle.dataset.target}`);
+                const isPassword = input.type === "password";
+                input.type = isPassword ? "text" : "password";
+                toggle.setAttribute("aria-label", isPassword ? "Hide password" : "Show password");
+                toggle.innerHTML = isPassword ? '<i class="bi bi-eye-slash"></i>' : '<i class="bi bi-eye"></i>';
+            });
+        });
+
+        function showMessage(target, text, type) {
+            target.textContent = text;
+            target.className = `message ${type}`;
+        }
+
+        function finishLogin(username) {
+            const user = { username, loggedInAt: new Date().toISOString() };
+            localStorage.setItem("movieflixUser", JSON.stringify(user));
+
+            if (rememberInput.checked) {
+                localStorage.setItem("movieflixRememberedUser", username);
+            } else {
+                localStorage.removeItem("movieflixRememberedUser");
+            }
+
+            showMessage(message, "Login successful. Taking you home...", "success");
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 700);
+        }
+
+        function demoLogin(username, password) {
+            return (username === "admin" && password === "admin123") || (username === "user" && password === "movieflix");
+        }
+
+        function localUserLogin(username, password) {
+            return getStoredUsers().some((user) => user.username === username && user.password === password);
+        }
+
+        signupForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = signupNameInput.value.trim();
+            const username = signupUsernameInput.value.trim();
+            const password = signupPasswordInput.value.trim();
+            const users = getStoredUsers();
+
+            if (!name || !username || !password) {
+                showMessage(signupMessage, "Please fill all signup fields.", "error");
+                return;
+            }
+
+            if (password.length < 6) {
+                showMessage(signupMessage, "Password must be at least 6 characters.", "error");
+                return;
+            }
+
+            if (users.some((user) => user.username.toLowerCase() === username.toLowerCase()) || username === "admin" || username === "user") {
+                showMessage(signupMessage, "That username is already taken.", "error");
+                return;
+            }
+
+            users.push({ name, username, password, createdAt: new Date().toISOString() });
+            saveStoredUsers(users);
+            usernameInput.value = username;
+            passwordInput.value = "";
+            signupForm.reset();
+            switchForm("login");
+            showMessage(message, "Signup successful. Now login with your new account.", "success");
+        });
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!username || !password) {
+                showMessage(message, "Please enter both username and password.", "error");
+                return;
+            }
+
+            showMessage(message, "Checking your account...", "loading");
+
+            if (localUserLogin(username, password)) {
+                finishLogin(username);
+                return;
+            }
+
+            try {
+                const response = await fetch("/api/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json();
+                if (response.ok && data.success) {
+                    finishLogin(username);
+                    return;
+                }
+
+                showMessage(message, data.message || "Invalid username or password.", "error");
+            } catch (error) {
+                if (demoLogin(username, password)) {
+                    finishLogin(username);
+                    return;
+                }
+
+                showMessage(message, "Account not found. Sign up first or use the demo login below.", "error");
+            }
+        });
+    </script>
+</body>
+
+</html>
